@@ -1,0 +1,522 @@
+@charset "UTF-8";
+/* 文字コードの指定 */
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: '游明朝', 'Baskervville', serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #878788;
+  background-color: #fff;
+  width: 100%;
+}
+
+@media (min-width: 769px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+a {
+  color: #878788;
+  text-decoration: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.number {
+  font-family: '游明朝', serif;
+}
+
+section {
+  padding: 3.5rem 3rem;
+}
+
+.section-title {
+  font-size: 2.4rem;
+  color: #81a0d3;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.section-title span {
+  font-family: 'Baskervville', serif;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+.section-title .number {
+  font-family: '游明朝', serif;
+  margin-left: 0;
+}
+
+.br::before {
+  content: "\A";
+  white-space: pre;
+}
+
+.spacer {
+  width: 100%;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 7rem;
+  padding: 0;
+  background-color: #ccdbf1;
+  z-index: 1;
+}
+
+header img {
+  width: 10.4rem;
+  height: 3.1rem;
+  margin: 2rem;
+}
+
+header .nav-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 3.6rem;
+  color: #81a0d3;
+  margin: 2rem;
+  cursor: pointer;
+}
+
+header .sp-nav {
+  position: absolute;
+  top: 7rem;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: none;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+header .sp-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header .sp-nav ul div {
+  text-align: center;
+  margin-top: 5rem;
+}
+
+header .sp-nav span {
+  font-family: 'Baskervville', serif;
+  font-size: 3rem;
+  margin-left: 1.5rem;
+}
+
+.firstview {
+  position: relative;
+}
+
+.firstview .firstview-img {
+  height: 100vh;
+  background-image: url("../images/firstview_bg.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.firstview .catch {
+  position: absolute;
+  top: calc(50vh - 7rem);
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+}
+
+.firstview .catch p {
+  font-family: 'Baskervville', serif;
+  font-size: 1.8rem;
+  color: #81a0d3;
+  margin: 2rem 3rem;
+}
+
+.firstview .catch h1 {
+  font-family: 'Baskervville', serif;
+  font-size: 2.4rem;
+  color: #81a0d3;
+  margin: 2rem 3rem;
+}
+
+@media (min-width: 769px) {
+  .firstview .catch h1 .br {
+    display: none;
+  }
+}
+
+.about .container img {
+  display: block;
+  margin: 4rem auto;
+}
+
+.about .container .profile {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about .container .profile span {
+  margin-left: 1.5rem;
+}
+
+.about .container .career {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.about .container .career .time {
+  margin-right: 7rem;
+}
+
+.about .container .career .text {
+  width: 20rem;
+}
+
+.about .container .career .text br {
+  display: block;
+  content: "";
+  margin: 1.5rem;
+}
+
+.skills .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.skills .container .skill-item {
+  background-color: #ccdbf1;
+  border-radius: 1rem;
+  text-align: center;
+  height: 35rem;
+  padding: 3rem;
+  margin-bottom: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.skills .container .skill-itemlast-child {
+  margin-bottom: 0;
+}
+
+.skills .container .skill-item h3 {
+  font-size: 1.8rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+.skills .container .skill-item i {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+.skills .container .skill-item p {
+  text-align: left;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+.works .container .item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.works .container .itemlast-child {
+  margin-bottom: 0;
+}
+
+.works .container .item .slidedown-btn {
+  position: absolute;
+  top: 23.7rem;
+  right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  height: 5.6rem;
+  width: 5.6rem;
+}
+
+.works .container .item .slidedown-btn i {
+  font-size: 4.8rem;
+  color: #9a8dc2;
+}
+
+.works .container .item .work-info {
+  display: none;
+}
+
+.works .container .item .work-info .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12.5rem;
+  padding: 1.5rem 2rem;
+}
+
+.works .container .item .work-info .container .text {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.works .container .item .work-info .container .textfirst-child {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.works .container .item .work-info .container .detail-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: solid 1px #878788;
+  border-radius: 50%;
+  height: 9.5rem;
+  width: 9.5rem;
+}
+
+.works .container .item .work-info .container .detail-btn i {
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+
+.works .container #and-more {
+  font-size: 1.8rem;
+  color: #9a8dc2;
+  margin-top: 5rem;
+  text-align: right;
+}
+
+.works .container #and-more i {
+  margin-right: 1rem;
+}
+
+.work {
+  margin-top: 7rem;
+}
+
+.work .container .image {
+  width: 100%;
+  height: 20.6rem;
+}
+
+.work .container .explanation {
+  margin-top: 4rem;
+}
+
+.work .container .explanation .profile {
+  font-size: 1.8rem;
+}
+
+.work .container .explanation .profile p {
+  margin-bottom: 1.5rem;
+}
+
+.work .container .explanation .profile h1 {
+  font-size: 2.4rem;
+}
+
+.work .container .explanation .profile a {
+  display: block;
+  margin: 3rem 0;
+}
+
+.work .container .explanation .use-skills {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #81a0d3;
+}
+
+.work .container .explanation .use-skills p {
+  border: solid 1px #81a0d3;
+  border-radius: 2rem;
+  padding: .5rem 1rem;
+  margin: .5rem;
+}
+
+.work .container .explanation .summary h1 {
+  font-size: 1.8rem;
+  color: #81a0d3;
+  margin: 7rem 0 2.5rem 0;
+}
+
+.work .container .explanation .concept h1 {
+  font-size: 1.8rem;
+  color: #81a0d3;
+  margin: 7rem 0 2.5rem 0;
+}
+
+.work .container .explanation .progress h1 {
+  font-size: 1.8rem;
+  color: #81a0d3;
+  margin: 7rem 0 2.5rem 0;
+}
+
+.other-works .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.other-works .container .item {
+  height: 14.7rem;
+  width: 14.7rem;
+  margin-bottom: 2rem;
+}
+
+.other-works .container .item img {
+  border-radius: 1rem;
+}
+
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact .container p {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.contact .container .mail-address {
+  margin-left: 2rem;
+}
+
+.contact .container .send-mail-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #9a8dc2;
+  border-radius: 2rem;
+  width: 18.8rem;
+  height: 4.2rem;
+  text-align: center;
+}
+
+.contact .container .send-mail-btn a {
+  font-family: 'Baskervville', serif;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Baskervville', serif;
+  font-size: 1.2rem;
+  background-color: #ccdbf1;
+  height: 5.5rem;
+}
+
+.carousel .slick-dots li {
+  width: 1rem;
+}
+
+.carousel .slick-dots li button:before {
+  color: #ccdbf1;
+}
+
+.carousel .slick-dots li.slick-active button:before {
+  color: #81a0d3;
+}
+/*# sourceMappingURL=style.css.map */

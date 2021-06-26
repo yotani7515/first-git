@@ -1,0 +1,38 @@
+//
+// ファーストビューセクションのスタイル
+//
+
+.firstview{
+    position: relative;
+    .firstview-img {
+        height: 100vh;
+        background-image: url("../images/firstview_bg.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    // 画像上に表示するテキスト
+    .catch {
+        position: absolute;
+        top: calc(50vh - 7rem);
+        background-color: rgba(255, 255, 255, 0.5);
+        width: 100%;
+        p {
+            font-family: 'Baskervville', serif;
+            font-size: 1.8rem;
+            color: $d-blue;
+            margin: 2rem 3rem;
+        }
+        h1 {
+            font-family: 'Baskervville', serif;
+            font-size: 2.4rem;
+            color: $d-blue;
+            margin: 2rem 3rem;
+            @media (min-width: 769px) {
+                .br {
+                    display:none;
+                }
+            }
+        }
+    }
+}

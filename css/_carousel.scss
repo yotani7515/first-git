@@ -1,0 +1,21 @@
+//
+// カルーセルのスタイル
+// 
+
+.carousel {
+    .slick-dots{
+        // 非アクティブ状態のドット
+        li {
+            width: 1rem;
+            button:before {
+                color: $l-blue;   
+            }
+        }
+        // アクティブ状態のドット
+	    li.slick-active {
+    		button:before {
+    	        color: $d-blue;
+    	    }
+    	}
+    }
+}

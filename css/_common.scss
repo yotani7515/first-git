@@ -1,0 +1,86 @@
+// 
+// 共通のスタイル
+// 
+
+// 色の指定
+$white: #fff;
+$black: #878788;
+$l-blue: #ccdbf1;
+$d-blue: #81a0d3;
+$purple: #9a8dc2;
+
+// 共通設定
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: '游明朝', 'Baskervville', serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: $black;
+    background-color: $white;
+    width: 100%;
+    @media (min-width: 769px) {
+        font-size: 1.8rem;
+    }
+}
+
+// 画像の設定
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+// リンクの設定
+a {
+    color: $black;
+    text-decoration: none;
+}
+
+// 大文字化
+.uppercase {
+    text-transform: uppercase;
+}
+
+// 数字のフォント
+.number {
+    font-family: '游明朝', serif;
+}
+
+// セクションの設定
+section {
+    padding: 3.5rem 3rem;
+}
+
+// セクション見出し
+.section-title {
+    font-size: 2.4rem;
+    color: $d-blue;
+    text-align: center;
+    margin-bottom: 4rem;
+    @media (min-width: 769px) {
+
+    }
+    span {
+        font-family: 'Baskervville', serif;
+        font-size: 3rem;
+        margin-left: 1.5rem;
+        // 数字のフォント
+    }
+    .number {
+        font-family: '游明朝', serif;
+        margin-left: 0;
+    }
+}
+
+// 文中の改行
+.br::before {
+	content: "\A" ;
+	white-space: pre ;
+}
+
+// オブジェクトの折り返し
+.spacer {
+    width: 100%;
+}

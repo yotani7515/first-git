@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Y.Otani's Portfolio | Webデザイン</title>
+        <meta name="description" content="名古屋市在住のWebデザイナー見習いです。制作したWebサイトや趣味で描いたイラストなどを発信しているサイトです。">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/5fb98acb3b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <!-- ヘッダーロゴ -->
+            <a href="../index.html"><img src="./images/header_logo.png"></a>
+            
+            <!-- SP表示 ヘッダーナビ -->
+            <div id="nav-button" class="nav-button"><i class="fas fa-bars" aria-label="menu"></i></div>
+            
+            <!-- SP用 ナビゲーション -->
+            <nav class="sp-nav">
+                <ul>
+                    <li><div><i class="far fa-user-circle" aria-label="about"></i><span class="uppercase">About</span></div></li>
+                    <li><div><i class="far fa-star" aria-label="skills"></i><span class="uppercase">SKILLS</span></div></li>
+                    <li><div><i class="fas fa-pencil-ruler" aria-label="works"></i><span class="uppercase">WORKS</span></div></li>
+                    <li><div><i class="far fa-envelope" aria-label="contact"></i><span class="uppercase">CONTACT</span></div></li>
+                </ul>
+            </nav>
+            
+            
+            <!-- PC表示 ヘッダーナビ -->
+            
+        </header>
+        
+        <main>
+            <!-- **************** ファーストビュー **************** -->
+            <div class="firstview">
+                <div class="firstview-img"></div>
+                <div class="catch">
+                    <p>Welcome to</p>
+                    <h1>YURIKA OTANI's <span class="br"></span>Portfolio</h1>
+                </div>
+            </div>
+            
+            <!-- **************** ABOUTセクション **************** -->
+            <section class="about">
+                <div class="section-title">
+                    <i class="far fa-user-circle" aria-label="about"></i><span class="uppercase">About</span>
+                </div>
+                <div class="container">
+                    <div>
+                        文系の大学を卒業後、システムエンジニアとして就職。<br>
+                        3年間​システム開発の経験を積んでいくうちに、デザインに対する興味が抑えきれず、
+                        現在は本業の傍らWEBデザイナーになるべく、独学でデザインの勉強をしています。<br>
+                        <br>
+                        趣味でイラストも描いてます。
+                    </div>
+                    <img src="./images/profile_image.png" alt="プロフィール画像">
+                    <div class="profile">
+                        <p>大谷 由利香<span>Otani Yurika</span></p>
+                        <p>名古屋市在住</p>
+                    </div>
+                    <div class="career">
+                        <p class="time">2018年</p>
+                        <p class="text">
+                            システムエンジニアとして名古屋市内の企業に就職<br>
+                            WEBアプリケーション開発のプロジェクトに携わり、JavaやHTMLを使ったコーディング業務を担当
+                        </p>
+                        <p class="time">2021年</p>
+                        <p class="text">本業と両立しながら、独学でWEBデザインの勉強を開始</p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- **************** SKILLSセクション **************** -->
+            <section class="skills">
+                <div class="section-title">
+                    <i class="far fa-star" aria-label="skills"></i><span class="uppercase">SKILLS</span>
+                </div>
+                <div class="container">
+                    <!-- skill 1 -->
+                    <div class="skill-item">
+                        <h3>HTML5/CSS3</h3>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <p>
+                            現職でWEBアプリケーションの開発に使用しており、申込みフォームの作成やデータ管理画面を作成した経験があります。<br>
+                            CSSに関しては、flexboxやメディアクエリを活用したレスポンシブWebデザインでWebサイトを作成することができます。<br>
+                            また、Sassを導入してWebサイトを作成したこともあります。
+                        </p>
+                    </div>
+                    <!-- skill 2 -->
+                    <div class="skill-item">
+                        <h3>JavaScript/jQuery</h3>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <p>
+                            HTMLやCSS同様に、現職のWebアプリケーション開発に使用しており、
+                            Javaなどのサーバーサイドのプログラムから受け取ったデータで、表示を切り替えられる画面を作成することができます。<br>
+                            レファレンスなどを参照したり、外部ライブラリを読み込んだりしつつ、画面に動きをつけることが可能です。
+                        </p>
+                    </div>
+                    <!-- skill 3 -->
+                    <div class="skill-item">
+                        <h3>Photoshop</h3>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <p>
+                            Webサイトのデザインカンプやバナーの作成を行うことができます。<br>
+                            また、シャドウやエンボスなどのレイヤー効果をつける操作も可能です。
+                        </p>
+                    </div>
+                    <!-- skill 4 -->
+                    <div class="skill-item">
+                        <h3>Illustrator</h3>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <p>
+                            まだ勉強を始めたばかりですが、Photoshopと共通している機能はIllustratorでも使用できます。<br>
+                            ロゴやアイコンを作成できるようにトレース練習をしてみようかと思ってます。
+                        </p>
+                    </div>
+                    <!-- skill 5 -->
+                    <div class="skill-item">
+                        <h3>Java</h3>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <p>
+                            現職のWEBアプリケーションの開発にてメインで使用している言語です。<br>
+                            保守寄りのプロジェクトであるので、他の人が製造したソースを解析する機会が多く、処理の流れを追う技能が磨かれました。<br>
+                            HTML（JSP）と連携して簡単なWebアプリケーションを１から開発した経験もあります。
+                        </p>
+                    </div>
+                    <!-- skill 6 -->
+                    <div class="skill-item">
+                        <h3>イラスト</h3>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="fas fa-star" aria-label="skill-lebel"></i>
+                        <i class="far fa-star" aria-label="skill-lebel"></i>
+                        <p>
+                            趣味でイラストを描いており、アナログもデジタルも両方描きます。<br>
+                            デジタルでイラストを描くときはClipStudioを使用しています。
+                        </p>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- **************** WORKSセクション **************** -->
+            <section class="works">
+                <div class="section-title">
+                    <i class="fas fa-pencil-ruler" aria-label="works"></i><span class="uppercase">WORKS</span>
+                </div>
+                <div class="container">
+                    <!-- work1 -->
+                    <div class="item">
+                        <img src="./images/works/sp_work1.png">
+                        <div class="slidedown-btn" id="slidedown-btn1"><i class="fas fa-angle-down" aria-label="slidedown"></i></div>
+                        <div class="work-info" id="work-info1">
+                            <div class="container">
+                                <div class="text">
+                                    <p>work1</p>
+                                    <p>Sample Company</p>
+                                    <p>コーポレートサイト</p>
+                                </div>
+                                <a href="./work/work1.html">
+                                    <div class="detail-btn"><i class="fas fa-file-alt" aria-label="detail"></i>制作過程</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- work2 -->
+                    <div class="item">
+                        <img src="./images/works/sp_work2.png">
+                        <div class="slidedown-btn" id="slidedown-btn2"><i class="fas fa-angle-down" aria-label="slidedown"></i></div>
+                        <div class="work-info" id="work-info2">
+                            <div class="container">
+                                <div class="text">
+                                    <p>work2</p>
+                                    <p>Sample Company</p>
+                                    <p>コーポレートサイト</p>
+                                </div>
+                                <a href="./work/work2.html">
+                                    <div class="detail-btn"><i class="fas fa-file-alt" aria-label="detail"></i>制作過程</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="and-more"><i class="fas fa-angle-right"></i>and more</div>
+                </div>
+                    
+            </section>
+            
+            <!-- **************** CONTACTセクション **************** -->
+            <section class="contact">
+                <div class="section-title">
+                    <i class="far fa-envelope" aria-label="contact"></i><span class="uppercase">CONTACT</span>
+                </div>
+                <div class="container">
+                    <!-- メールアドレス表示 -->
+                    <p>mail:</p>
+                    <p class="mail-address">
+                        <script type="text/javascript">
+                        
+                        function converter(M){
+                        var str="", str_as="";
+                        for(var i=0;i<M.length;i++){
+                        str_as = M.charCodeAt(i);
+                        str += String.fromCharCode(str_as + 1);
+                        }
+                        return str;
+                        }
+                        var ad = converter(String.fromCharCode(120,45,110,115,96,109,104,54,52,48)+String.fromCharCode(52,63,102,108,96,104,107,45,98,110,108));
+                        document.write("<a href=\"mai"+"lto:"+ad+"\">"+ad+"<\/a>");
+                        
+                        </script>
+                        <noscript><img src="./images/mailaddress.png"></noscript>
+                    </p>
+                    <div class="spacer"></div>
+                    <!-- メール送信ボタン -->
+                    <div class="send-mail-btn uppercase">
+                        <script type="text/javascript">
+                        
+                        function converter(M){
+                        var str="", str_as="";
+                        for(var i=0;i<M.length;i++){
+                        str_as = M.charCodeAt(i);
+                        str += String.fromCharCode(str_as + 1);
+                        }
+                        return str;
+                        }
+                        function mail_to(k_1,k_2)
+                        {eval(String.fromCharCode(108,111,99,97,116,105,111,110,46,104,114,101,102,32,
+                        61,32,39,109,97,105,108,116,111,58) 
+                        + escape(k_1) + 
+                        converter(String.fromCharCode(120,45,110,115,96,109,104,54,52,48,52,63,102,108,96,104,107,45,98,110,108,
+                        62,114,116,97,105,100,98,115,60)) 
+                        + escape(k_2) + "'");} 
+                        document.write('<a href=JavaScript:mail_to("","")>send mail<\/a>');
+                        
+                        </script>
+                        <noscript><img src="./images/send_mail_btn.png"></noscript>
+                    </div>
+
+                </div>
+            </section>
+            
+        </main>
+        
+        <footer>
+            <small>© Otani Yurika All rights reserved.</small>
+        </footer>
+       
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="./js/carousel.js"></script>
+        <script src="./js/slideshow.js"></script>
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/slidedown.js"></script>
+
+    </body>
+</html>

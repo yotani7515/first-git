@@ -1,0 +1,33 @@
+//
+// CONTACTセクションのスタイル
+//
+
+.contact {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        p {
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+        .mail-address {
+          margin-left: 2rem;  
+        }
+        .send-mail-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $purple;
+            border-radius: 2rem;
+            width: 18.8rem;
+            height: 4.2rem;
+            text-align: center;
+            a {
+                font-family: 'Baskervville', serif;
+                font-size: 1.4rem;
+                color: $white;
+            }
+        }
+    }
+}

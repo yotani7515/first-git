@@ -1,0 +1,15 @@
+@charset 'UTF-8'; /* 文字コードの指定 */
+
+// Google Fontsの読み込み
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&display=swap'); // Baskervville
+
+// Scssファイルの読み込み
+@import "common";
+@import "header";
+@import "firstview";
+@import "about";
+@import "skills";
+@import "work";
+@import "contact";
+@import "footer";
+@import "carousel";
